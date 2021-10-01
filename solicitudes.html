@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>IlussionWeb </title>
+        <base href="www.ilussionweb.com">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="primer proyecto">
+        <meta name=author content="Aaron y Diego">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+            <header>           
+                
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                
+                                <li class="nav-iteme">
+                                    <h1>IlussionWeb  </h1>
+                                </li>
+                                
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="cartelera.html">Cartelera <span class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="promociones.html">Promociones <span class="sr-only">(current)</span></a>
+                                </li>
+                                
+                                <li class="nav-item active dropdown">
+                                    <a class="nav-link dropdown-toggle" href="nuestrahis.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nuestra Historia
+                                    </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="index.html">Nuestra Vision</a></li>
+                                                <li><a class="dropdown-item" href="index.html">Vision</a></li>
+                                                <li><a class="dropdown-item" href="index.html">Something else here</a></li>
+                                            </ul>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="contacto.html">Contactenos <span class="sr-only">(current)</span></a>
+                                </li>
+                            
+                            </ul>
+
+                                <form class="form-inline my-2 my-lg-0">
+                                    <button type="button" class="btn btn-dark">Ingresar</button>
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Nombre de la pelicula" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                                </form>
+                        </div>
+                </nav>
+
+                
+            </header>
+
+            <h1>Solicitudes</h1>
+
+            <form name="formulario2" action="" method="POST" onsubmit="return validarTodo()">
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="NombreS">Name</label>
+                      <input type="text" class="form-control" id="nameS" placeholder="Type your name"  autofocus required>
+
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="CorreoS">Correo Electronico</label>
+                        <input type="text" name="email" id="emaaail" class="form-control" required placeholder="Escriba su correo" autofocus required/>
+                        <span id="errorCorreo"></span>
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="MiembroS">Tarjeta de miembro</label>
+                      <input type="text" class="form-control" id="tarjetaS" placeholder="Escriba su tarjeta de miembro"  autofocus required>
+                      <span id="errorTarjeta"></span>
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="TelefonoS">Telefono</label>
+                        <input type="text" class="form-control" id="phoneS" placeholder="Escriba su numero de telefono" >
+                        <span id="errorPhone"></span>
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="comprar" onclick="habilitar1()">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Comprar
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rentar" onclick="habilitar2()">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Rentar
+                            </label>
+                          </div>
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="canS">Cantidad de peliculas que desea</label>  
+                        <input type="number" name="numeroS" id="can" class="form-control" required placeholder="Escriba la cantidad que desea"/>
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="prefeS">Preferencias</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="terror">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Terror/Suspenso
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Comedia">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Comedia
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="aacion">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Accion
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="fantasia">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Fantasia
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="romanticas">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Romanticas
+                            </label>
+                          </div>
+                    </div>
+                </div>
+
+                <div clas="row">
+                    <div clas="col">
+                        <label for="adicional">Informacion adicional</label>
+                        <div class="form-outline">
+                            <textarea class="form-control" id="textAreaExample2" rows="8" placeholder="Escriba informacion adicional"></textarea>
+                          </div>
+
+                    </div>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6Lfs2J8cAAAAAGc2K92cnacucDazswa6jGMGUxFI"></div>
+              
+              <div class="row">
+                  <div class="col-6">
+                  <input type="submit" value="Send" name="btnEnviar"  data-toggle="modal" data-target="#exampleModal" class="btn btn-success" onclick="myForm()"> 
+                  </div>
+              </div>
+
+
+                
+
+
+            </form>
+
+
+
+
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
+            
+                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+            
+                <ul class="nav col-md-4 justify-content-end">
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+              </footer>
+
+        <script src="js/validacion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </body>
+
+
+</html>
