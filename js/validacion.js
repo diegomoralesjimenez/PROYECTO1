@@ -55,4 +55,8 @@ function validarCorreo(campo)
 
 }
 
+function validarTarjeta()
+{
+    
+}
 
