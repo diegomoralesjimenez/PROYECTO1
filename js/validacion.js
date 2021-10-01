@@ -1,3 +1,18 @@
+function habilitar1()
+{
+    if(document.getElementById("comprar").disabled==false)
+    {
+        document.getElementById("rentar").disabled=true;              
+    }
+}
+
+function habilitar2()
+{
+    if(document.getElementById("rentar").disabled==false)
+    {
+            document.getElementById("comprar").disabled=true;
+    }
+}
 function validarTodo()
 {
     if(!validarTelefono(document.getElementById("phoneS")))
@@ -8,10 +23,8 @@ function validarTodo()
     {
         return false;
     }
-    if(!validarTarjeta(document.getElementById("tarjetaS")))
-    {
-        return false;
-    }
+    
+    return true;
 }
 
 function validarTelefono(campo)
