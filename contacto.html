@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+      <title>IlussionWeb</title>
+      <base href="www.ilussionweb.com">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="primer proyecto">
+        <meta name=author content="Aaron y Diego">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <header>           
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            
+                            <li class="nav-iteme">
+                                <h1>IlussionWeb</h1>
+                            </li>
+                            
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="cartelera.html">Cartelera <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="promociones.html">Promociones <span class="sr-only">(current)</span></a>
+                            </li>
+                            
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="nuestrahis.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Nuestra Historia
+                                </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="index.html">Nuestra Vision</a></li>
+                                            <li><a class="dropdown-item" href="index.html">Vision</a></li>
+                                            <li><a class="dropdown-item" href="index.html">Something else here</a></li>
+                                        </ul>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contacto.html">Contactenos <span class="sr-only">(current)</span></a>
+                            </li>
+                           
+                        </ul>
+
+                            <form class="form-inline my-2 my-lg-0">
+                                <button type="button" class="btn btn-dark">Ingresar</button>
+                                <input class="form-control mr-sm-2" type="search" placeholder="Nombre de la pelicula" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                            </form>
+                    </div>
+            </nav>
+
+            
+        </header>
+
+
+
+
+        <div id="map" style="width:100%;height:400px;"></div>
+
+
+       <div class="container">
+        <div class="row justify-content-start">
+      
+      <h1> Contact Form</h1>
+      
+          <form name="formulario1" action="" method="POST" onsubmit="return validarTodo()">
+              <div class="row">
+                  <div class="col-6">
+                      <label for="nombre">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Type your name"  autofocus required>
+                  </div>
+      
+                  <div class="col-6">
+                      <label for="apellido">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Type your last name">
+                  </div>
+              </div>
+      
+              <div class="row">
+                  <div class="col-12">
+                      <label for="correo" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="correo" placeholder="name@example.com" required>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <label for="correo" class="form-label">Tarjeta de Asociado</label>
+                  <input type="text" class="form-control" id="name" placeholder="Type your name">
+                  </div>
+              </div>
+      
+              
+              <div class="row">
+                  <div class="col-12">
+                      <label for="correo" class="form-label">Phone: </label>
+                      <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                  </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12">
+                  <label for="correo" class="form-label">Comment: </label>
+                      <div class="input-group">
+                          <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+                      </div>
+                  </div>
+              </div>
+      
+      
+  
+               Tarjeta de asociado (campo requerido) Además el número de asociado no debe
+              ser letras ni caracteres especiales, solo números y de 6 dígitos. solo números y
+              de 6 dígitos separados en dos dígitos. Con el formato XX-XX-XX.
+
+              
+              <div class="g-recaptcha" data-sitekey="6Lfs2J8cAAAAAGc2K92cnacucDazswa6jGMGUxFI"></div>
+              
+              <div class="row">
+                  <div class="col-6">
+                  <input type="submit" value="Send" name="btnEnviar"  data-toggle="modal" data-target="#exampleModal" class="btn btn-success" onclick="myForm()"> 
+                  </div>
+              </div>
+      
+      
+          </form>
+
+          
+      
+      
+      
+      </div>
+      </div>
+
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+              </ul>
+            </footer>
+        
+        <script>
+          let map;
+
+          function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+           center: { lat: -34.397, lng: 150.644 }, zoom: 8,
+          });
+          }
+        </script>
+              
+              <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-utqTnKZYSsyIcxYloIhp1ST2QN0Pb8&callback=initMap&v=weekly"
+              async
+            ></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="js/validacion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+    </body>
+
+
+</html>
+

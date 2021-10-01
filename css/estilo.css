@@ -1,0 +1,16 @@
+.carousel-item{
+    background-position:center;
+    background-size:cover !important;
+    height: 32rem;
+}
+
+.container-marketing{
+    align-items: center;
+    text-align: center !important;
+    padding: 4% 4% 4% 4%;
+}
+
+.btn-dark{
+    background-color: white !important;
+    color: black !important;
+}
