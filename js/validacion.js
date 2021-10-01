@@ -12,8 +12,6 @@ function validarTodo()
     {
         return false;
     }
-       
-    return true;
 }
 
 function validarTelefono(campo)
@@ -42,38 +40,6 @@ function validarCorreo(campo)
     }   
     return true;
 
-}
-
-validarTarjeta(campo)
-{
-    var regex = /^([0-9])-.{7}$/;
-    
-     if(!campo.value.match(regex))
-    {
-        document.getElementById("errorTarjeta").style.color="red";
-        var mensaje = "Solo se aceptan 6 digitos separados en dos por un guion XX-XX-XX";
-        document.getElementById("errorTarjeta").innerHTML = mensaje;
-        return false;
-    }
-    
-    return true;
-}
-
-
-function habilitar1()
-{
-    if(document.getElementById("comprar").disabled==false)
-    {
-        document.getElementById("rentar").disabled=true;              
-    }
-}
-
-function habilitar2()
-{
-    if(document.getElementById("rentar").disabled==false)
-        {
-            document.getElementById("comprar").disabled=true;
-        }
 }
 
 
