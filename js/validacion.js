@@ -23,7 +23,7 @@ function validarTodo()
     {
         return false;
     }
-    
+   
     return true;
 }
 
@@ -53,10 +53,5 @@ function validarCorreo(campo)
     }   
     return true;
 
-}
-
-function validarTarjeta()
-{
-    
 }
 

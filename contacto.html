@@ -82,41 +82,44 @@
           <form name="formulario1" action="" method="POST" onsubmit="return validarTodo()">
               <div class="row">
                   <div class="col-6">
-                      <label for="nombre">Name</label>
+                      <label for="nombre">Nombre</label>
                       <input type="text" class="form-control" id="name" placeholder="Type your name"  autofocus required>
                   </div>
       
                   <div class="col-6">
-                      <label for="apellido">Last Name</label>
+                      <label for="apellido">Apellido</label>
                       <input type="text" class="form-control" id="lastName" placeholder="Type your last name">
                   </div>
               </div>
       
               <div class="row">
                   <div class="col-12">
-                      <label for="correo" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="correo" placeholder="name@example.com" required>
+                      <label for="correo" class="form-label">Correo Electronico</label>
+                      <input type="text" class="form-control" id="emaaail" placeholder="name@example.com" required>
+                      <span id="errorCorreo"></span>
                   </div>
               </div>
 
               <div class="row">
                 <div class="col-12">
                   <label for="correo" class="form-label">Tarjeta de Asociado</label>
-                  <input type="text" class="form-control" id="name" placeholder="Type your name">
-                  </div>
+                  <input type="text" class="form-control" id="tarjetaS" placeholder="Formato XX-XX-XX donde las X son numeros" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}">
+                  <span id="errorTarjeta"></span>
+                </div>               
               </div>
       
               
               <div class="row">
                   <div class="col-12">
-                      <label for="correo" class="form-label">Phone: </label>
-                      <input type="tel" id="phone" name="phone" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}" required><br><br>
+                      <label for="correo" class="form-label">Telefono: </label>
+                      <input type="tel" id="phoneS" name="phone" placeholder="Escriba su telefono" required><br><br>   
+                      <span id="errorPhone"></span>
                   </div>
               </div>
       
               <div class="row">
                 <div class="col-12">
-                  <label for="correo" class="form-label">Comment: </label>
+                  <label for="correo" class="form-label">Comentarios: </label>
                       <div class="input-group">
                           <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
                       </div>
@@ -125,10 +128,7 @@
       
       
   
-               Tarjeta de asociado (campo requerido) Además el número de asociado no debe
-              ser letras ni caracteres especiales, solo números y de 6 dígitos. solo números y
-              de 6 dígitos separados en dos dígitos. Con el formato XX-XX-XX.
-
+             
               
               <div class="g-recaptcha" data-sitekey="6Lfs2J8cAAAAAGc2K92cnacucDazswa6jGMGUxFI"></div>
               
