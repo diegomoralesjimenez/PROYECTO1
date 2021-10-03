@@ -1,44 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700;900&display=swap');
 
-.bg-dark{
-    background-color: none !important;
-}
-.carousel-item{
-    background-position:center;
-    background-size:cover !important;
-    height: 32rem;
-}
-
-.container-marketing{
-    align-items: center;
-    text-align: center !important;
-    padding: 2% 4% 4% 4%;
-}
-
-.promociones{
-    font-family: Raleway;
-    text-align: center;
-}
-
-.btn-dark{
-    background-color: white !important;
-    color: black !important;
-}
-
-.cartelera-semanal{
-    font-family: Raleway;
-    padding-left: 3%;
-    padding-bottom: 3%;
-    color: white;
-    font-size: 3em !important;
+body{
+    background-color: black !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 .col-3{
     background-size: cover;
     background-position: center;
     border-radius: 12px 12px 12px 12px;
-    box-shadow:-1px 0px 9px 3px;
-    transition: all .2s ease-in-out !important; 
+    height: 500px;
 }
 
 .row{
@@ -46,21 +17,8 @@
     margin-right: 0px !important;
 }
 
-.col-3:hover{
-    transform: scale(1.1) !important; 
-}
-
-.container-back{
-    padding-top: 4% !important;
-    padding-bottom: 4% !important;
-    background-color: #0070ff;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-
 a.nav-link{
-    font-family: Raleway;
+    font-weight: 900;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-size: 0.8em !important;
@@ -68,9 +26,14 @@ a.nav-link{
 }
 
 .bg-img{
-    background-color: #0070ff;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:rgba(0,0,0,0.6);
 
-    height: 300px;
+    background-image: url("../img/dune-background.jpg.png");
+
+    height: 500px;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -79,4 +42,55 @@ a.nav-link{
     
     /* Needed to position the navbar */
     position: relative;
+}
+
+.movie{
+margin-top: -20em;
+}
+
+
+.movie-tittle{
+    padding-top: 1em;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
+}
+
+.movie-info{
+    font-weight: 300;
+    color: orange;
+    font-size: 1em;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 0;
+    margin-top: 0;
+    letter-spacing: 0.05em;
+}
+
+.movie-total{
+    padding-left: 2em;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    display: block;
+    padding-top: 1em;
+    
+    /* Other styles here */
+}
+
+p{
+    color: white;
+}
+
+h3{
+    text-align: center;
+    font-weight: 700;
+    color: orange;
+    padding-top: 2em;
+}
+.synopsis{
+    line-height: 2em;
+    padding-bottom: 4em;
 }
