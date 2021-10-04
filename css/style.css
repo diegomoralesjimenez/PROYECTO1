@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
 
 
 body{
     margin: 0;
     padding: 0;
     background-color: #e5e5e5 !important;
+    font-family:'Raleway' !important ;
 }
 
 @media (max-width: 991.98px) {
@@ -27,13 +28,14 @@ body{
 }
 
 .promociones{
-    font-family: Raleway;
+    font-weight: 900;
     text-align: center;
 }
 
 
 .cartelera-semanal{
-    font-family: Raleway;
+
+    font-weight: 900;
     padding-left: 3%;
     padding-bottom: 3%;
     color: white;
@@ -72,7 +74,7 @@ body{
 
 
 a.nav-link{
-    font-family: Raleway;
+    font-weight: 900;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-size: 0.8em !important;
@@ -90,7 +92,7 @@ a.nav-link:hover{
 .bg-img{
     background-image: url("../img/nav-background/nav.png");
 
-    height: 900px;
+    height: 800px;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -99,4 +101,36 @@ a.nav-link:hover{
     
     /* Needed to position the navbar */
     position: relative;
+}
+
+.CINE-P{
+    margin-top: 2em;
+    font-weight: 900;
+    font-size: 7em;
+    text-shadow: 1px 2px 6px black;
+    color: #e0981a;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+.CINE-T{
+    font-size: 6em;
+    letter-spacing: .7em;
+    margin-top: -.65em;
+    color: white;
+    text-shadow: 1px 2px 6px black;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 1em;
+}
+
+.cartelera-img{
+    padding-top: 7em;
+}
+
+.prom{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    max-width: 100%;
+    max-height: 100%;
 }
