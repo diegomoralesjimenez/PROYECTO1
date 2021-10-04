@@ -21,6 +21,7 @@ body{
     }
 }
 
+
 .container-marketing{
     align-items: center;
     text-align: center !important;
@@ -34,12 +35,12 @@ body{
 
 
 .cartelera-semanal{
-
     font-weight: 900;
     padding-left: 3%;
     padding-bottom: 3%;
     color: white;
     font-size: 3em !important;
+    
 }
 
 .col-3{
@@ -126,6 +127,8 @@ a.nav-link:hover{
 
 .cartelera-img{
     padding-top: 7em;
+    height: 100% !important;
+    width: 86% !important;
 }
 
 .prom{
