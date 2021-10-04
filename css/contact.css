@@ -1,23 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #e5e5e5 !important;
+    font-family: 'Raleway' !important;
 }
 
-@media (max-width: 991.98px) {
-    nav{
-        background-color: white !important;
-    }
-    button.navbar-toggler{
-        background-color: #0070ff !important;
-        border: 1px black !important;
-    }
-    span.navbar-toggler-icon{
-        color: black !important;
-    }
+
+.bg-dark{
+    background-color: none !important;
+}
+.carousel-item{
+    background-position:center;
+    background-size:cover !important;
+    height: 32rem;
 }
 
 .container-marketing{
@@ -31,6 +26,10 @@ body{
     text-align: center;
 }
 
+.btn-dark{
+    background-color: white !important;
+    color: black !important;
+}
 
 .cartelera-semanal{
     font-family: Raleway;
@@ -77,15 +76,7 @@ a.nav-link{
     text-transform: uppercase;
     font-size: 0.8em !important;
     padding-left: 3em !important;
-    color: white !important;
 }
-
-
-a.nav-link:hover{
-    color: #e0981a !important;
-    transition: .5s;
-}
-
 
 .bg-img{
     background-image: url("../img/nav-background/nav.png");
@@ -99,4 +90,54 @@ a.nav-link:hover{
     
     /* Needed to position the navbar */
     position: relative;
+}
+
+ul{
+    padding: 0 !important;
+    list-style-type: none !important;
+}
+
+li{
+    list-style-type: none !important;
+}
+
+.info{
+    line-height: 2em;  
+    letter-spacing: 0.05em;
+    font-size: .9em !important;
+    font-weight: 400;
+    color: white;
+}
+
+.info-p{
+    font-size: 1em !important;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    color: white;
+}
+
+.contact{
+    font-size: 3em !important;
+    font-weight: 700 !important;
+    padding-left: 15px !important;
+    padding-bottom: 0.5em;
+        color: orange;
+}
+
+.contact-1{
+    font-size: 3em !important;
+    font-weight: 700 !important;
+    padding-left: 15px !important;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    color: orange;
+}
+
+
+.info-box{
+    border-radius: 12px 12px 12px 12px;
+    background-color: #0055e3;
+    padding: 2em 2em 2em 2em;
+    margin-top: 1em;
+    text-align: center;
 }
