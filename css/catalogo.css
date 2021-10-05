@@ -52,11 +52,13 @@ body{
 
 .cartelera-semanal{
     font-weight: 900;
-    padding-left: 3%;
     padding-bottom: 3%;
     color: white;
     font-size: 3em !important;
-    
+    text-align: center;    
+}
+.p-catalogo{
+    text-align: center;  
 }
 
 div.col-lg-3.col-md-2{
