@@ -185,13 +185,20 @@
 
         
         <script>
-          let map;
-
+    
           function initMap() {
-          map = new google.maps.Map(document.getElementById("map"), {
-           center: { lat: -34.397, lng: 150.644 }, zoom: 8,
-          });
-          }
+  const myLatLng = {  lat: 9.97111227142225, lng: -84.12911221534355 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
         </script>
               
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-utqTnKZYSsyIcxYloIhp1ST2QN0Pb8&callback=initMap&v=weekly"async></script>
