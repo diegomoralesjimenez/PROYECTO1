@@ -25,7 +25,7 @@ a.nav-link{
     padding-left: 3em !important;
 }
 
-.bg-img{
+.bg-img-nav{
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +71,7 @@ margin-top: -20em;
     padding-left: 2em;
 }
 
-.icon {
+.icon-1 {
     height: 50px;
     width: 50px;
     display: block;
@@ -91,7 +91,7 @@ h3{
 }
 .synopsis{
     line-height: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 0em;
     padding-left: 4em;
     padding-right: 2em;
     text-align: justify !important;
@@ -142,4 +142,10 @@ div.col-sm-6.col-md-4.col-lg-4.item{
     padding-bottom: 1em !important;
     padding-left: 0.5em !important;
     padding-right: 0.5 !important;
+}
+
+
+.video-a{
+    padding-top: 0 !important;
+    padding-bottom: 2em !important;
 }

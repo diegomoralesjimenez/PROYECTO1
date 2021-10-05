@@ -13,6 +13,8 @@
         <meta name="description" content="primer proyecto">
         <meta name=author content="Aaron y Diego">
         <link rel="stylesheet" href="css/greenknight.css">
+        <link rel="stylesheet" href="css/pelicula.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     </head>
@@ -21,52 +23,48 @@
 
       <header>           
             
-        <div class="bg-img">
-        <nav class="navbar navbar-expand-lg navbar-dark">            
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                          
-                            <h1>IlussionWeb</h1>
-                        </li>
-                        
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
+        <div class="bg-img-nav">
+       <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                 <a class="navbar-brand" href="index.html">
+                Ilussion<span class="web">Web</span>
+                </a>
 
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+               
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="cartelera.html">Cartelera <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html" style="color: #e0981a !important">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-
+                        <li class="nav-item active">
+                            <a class="nav-link" href="catalogo.html">Catalogo <span class="sr-only">(current)</span></a>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="promociones.html">Promociones <span class="sr-only">(current)</span></a>
                         </li>
-                        
                         <li class="nav-item active dropdown">
                             <a class="nav-link dropdown-toggle" href="nuestrahis.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Nuestra Historia
-                            </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="index.html">Nuestra Vision</a></li>
-                                        <li><a class="dropdown-item" href="index.html">Vision</a></li>
-                                        <li><a class="dropdown-item" href="index.html">Something else here</a></li>
-                                    </ul>
+                            Nuestra Historia</a>  
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="nuestrahis.html">Nuestra Historia</a></li>
+                                    <li><a class="dropdown-item" href="nuestravis.html">Nuestra Vision</a></li>
+                                </ul>
                         </li>
-
                         <li class="nav-item active">
                             <a class="nav-link" href="contacto.html">Contactenos <span class="sr-only">(current)</span></a>
                         </li>
-                       
                     </ul>
 
-                        <form class="form-inline my-2 my-lg-0">
-                            <button type="button" class="btn btn-dark">Ingresar</button>
-                            <input class="form-control mr-sm-2" type="search" placeholder="Nombre de la pelicula" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                        </form>
                 </div>
-        </nav>
-    </div>
+
+                <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+              </nav>
 
         
     </header>
@@ -90,7 +88,7 @@
                       <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                     </svg> rentar <strong>10$</strong></button>
                     <br>
-                    <a href="https://boxd.it/kuy2" target="_blank"><img class='icon'src="./img/letterboxd.svg"></a>
+                    <a href="https://boxd.it/kuy2" target="_blank"><img class='icon-1'src="./img/letterboxd.svg"></a>
                   </div>
                 </div>
               </div>
@@ -104,6 +102,12 @@
             <div class="col-md-8">
                 <h3 class="syp">Synopsis</h3>
                 <p class="synopsis">The story goes that Sir Gawain (Dev Patel), one of the knights of King Arthur's Round Table, accepts the challenge of a Green Knight, who challenges any knight to brandish his sword against him. In return, the knight who accepts the challenge will receive the same blow back one year and one day later. Sir Gawain accepts the challenge and beheads the Green Knight, only for said knight to take his head and leave. But the Green Knight will remind Sir Gawain of the end of his deal when the deadline is up.</p>
+
+               <div class="video-a">
+            <video class="d-block m-auto"  width="520" height="440" controls autoplay muted>
+              <source src="./videos/dune.mp4" type="video/mp4">
+            </video>
+            </div>
 
                 <div class="row photos">
                   <div class="col-sm-6 col-md-4 col-lg-4 item"><a data-lightbox="photos"><img class="img-fluid" src="./img/gallery/TheGreenKnight/1.png"></a></div>
@@ -159,21 +163,21 @@
         </div>
        </div>
 
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
-            
-                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-                </a>
-            
-                <ul class="nav col-md-4 justify-content-end">
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-                </ul>
-              </footer>
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+              <p class="col-md-4 mb-0 text-muted">&copy; 2021 Copyright All Right Reserved IlussionWeb</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-muted">Catalogo</a></li>
+                <li class="nav-item"><a href="promociones.html" class="nav-link px-2 text-muted">Promociones</a></li>
+                <li class="nav-item"><a href="nuestrahis.html" class="nav-link px-2 text-muted">Nuestra Historia</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contactenos</a></li>
+              </ul>
+            </footer>
         
        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5 !important;
+    background-color: #e5e5e5;
     font-family:'Raleway' !important ;
 }
 
@@ -242,15 +242,14 @@ a.nav-link:hover{
 
 footer{
       background-color: black !important;
+      padding-top: 2em !important;
   }
 
 .pb-3, .py-3 {
     padding-bottom: 4em !important;
-      padding-top: 4em !important;
+    margin-top: 2em !important;
 }
 
 .input.form-control.me-2{
     background-color: #e0981a !important;
 }
-
-
