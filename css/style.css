@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
     margin: 0;
@@ -10,14 +10,36 @@ body{
 
 @media (max-width: 991.98px) {
     nav{
-        background-color: white !important;
+        background-color: black !important;
     }
     button.navbar-toggler{
-        background-color: #0070ff !important;
+        background-color: white !important;
         border: 1px black !important;
     }
     span.navbar-toggler-icon{
         color: black !important;
+    }
+    .cine{
+        display: none;
+    }
+    .cartelera-img{
+        display: none;
+    }
+    div.col-lg-3.col-md-2{
+    max-width: 20% !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .bg-img{
+    height: 600px !important;
+    }
+    .CINE-P{
+    font-size: 3em !important;
+   }
+   .CINE-T{
+    font-size: 2em !important;
+    letter-spacing: .2em !important;
     }
 }
 
@@ -43,15 +65,13 @@ body{
     
 }
 
-.col-3{
+div.col-lg-3.col-md-2{
     background-size: cover;
     background-position: center;
     height: 500px;
-    margin-left: 15px;
-    margin-right: 15px;
     border-radius: 12px 12px 12px 12px;
-    max-width: 13% !important;
-    max-height: 4% !important;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+    max-height: 3% !important;
     box-shadow:-1px 0px 9px 3px;
     transition: all .2s ease-in-out !important; 
 }
@@ -136,4 +156,65 @@ a.nav-link:hover{
     margin-bottom: 2em;
     max-width: 100%;
     max-height: 100%;
+}
+
+
+
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 12px 12px 12px;
+    transition: .3s ease;
+    background-color: #1717177a;
+  }
+  
+  /* When you mouse over the container, fade in the overlay icon*/
+  .over:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* When you move the mouse over the icon, change color */
+  .fa-user:hover {
+    color: #eee;
+  }
+
+
+  .navbar-brand{
+      font-size: 2em !important;
+      color: #e0981a !important;
+      font-weight: 900;
+  }
+  .web{
+    font-weight: 400 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+  }
+
+footer{
+      background-color: black !important;
+  }
+
+.pb-3, .py-3 {
+    padding-bottom: 4em !important;
+      padding-top: 4em !important;
 }
