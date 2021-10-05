@@ -23,6 +23,10 @@ function validarTodo()
     {
         return false;
     }
+    if(!recuperarPrecio())
+    {
+        return false;
+    }
    
     return true;
 }
@@ -53,5 +57,20 @@ function validarCorreo(campo)
     }   
     return true;
 
+}
+
+function recuperarPrecio()
+{
+   var precioDune = document.getElementByID("dune").value;
+   var precioFreeGuy = document.getElementByID("freeGuy").value;
+   var precioGknight = document.getElementByID("greenKnigh").value;
+
+   if(document.getElementByID("dune") == dune)
+   { 
+	    document.getElementByID("precio").innerHTML = precioDune;
+        console.log("sirvio");
+        return false;
+   }
+   return true;
 }
 
