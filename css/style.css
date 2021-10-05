@@ -110,8 +110,8 @@ a.nav-link:hover{
 }
 
 
-.bg-img{
-    background-image: url("../img/nav-background/nav.png");
+#bg-img{
+    background-image: url('../img/nav-background/nav-1-min.png');
 
     height: 800px;
   
@@ -122,7 +122,9 @@ a.nav-link:hover{
     
     /* Needed to position the navbar */
     position: relative;
+
 }
+
 
 .CINE-P{
     margin-top: 2em;
@@ -149,6 +151,11 @@ a.nav-link:hover{
     padding-top: 7em;
     height: 100% !important;
     width: 86% !important;
+    transition: all .2s ease-in-out;
+}
+
+.cartelera-img:hover{
+    transform: scale(1.1);
 }
 
 .prom{
@@ -158,6 +165,29 @@ a.nav-link:hover{
     max-height: 100%;
 }
 
+.btn-primary {
+    color: #e0981a !important;
+    font-family: 'Raleway' !important;
+    background-color: black !important;
+    border: black !important;
+    transition: all .2s ease-in-out;
+}
+
+.btn-secondary{
+    color: white !important;
+    font-family: 'Raleway' !important;
+    background-color: #075bdf !important;
+    border: #075bdf !important;
+    transition: all .2s ease-in-out;
+}
+
+.btn-primary:hover{
+    transform: scale(1.09);
+}
+
+.btn-secondary:hover{
+    transform: scale(1.09);
+}   
 
 
 
@@ -218,3 +248,9 @@ footer{
     padding-bottom: 4em !important;
       padding-top: 4em !important;
 }
+
+.input.form-control.me-2{
+    background-color: #e0981a !important;
+}
+
+
